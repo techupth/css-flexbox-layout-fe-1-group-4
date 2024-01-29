@@ -1,29 +1,51 @@
 /* Start coding here */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
 
-  header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .container {
-    display: flex;
-    flex: 1;
-  }
+.header, .footer {
+  font-weight: bold;
+}
 
-  .main {
-    flex: 1;
-    padding: 20px;
-  }
+.header {
+  flex: 0 0 50px;
+  background: teal
+}
 
-  .sidebar {
-    flex-basis: 250px;
-    padding: 20px;
-  }
+.footer {
+  flex: 0 0 50px;
+  background: khaki
+}
+
+.content-body {
+  /*   flex: 1 1 auto; */
+  flex-grow: 1; /* equla to: height: calc(100vh - 100px); */
+  display: flex;
+  flex-direction: row;
+}
+
+.content-body .content {
+  flex: 1;
+  padding: 100px;
+  margin: 0 5px;
+  background: rgb(255, 171, 15)
+
+
+}
+.content-body .sidenav,
+.content-body .ads {
+  flex: 0 0 100px;
+  padding: 100px;
+  background: orange
+
+}
+
