@@ -1,1 +1,43 @@
 /* Start coding here */
+body {
+  background: linear-gradient(to right, pink, blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2{
+  color: white;
+  font-size: 40px;
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(241, 233, 233, 0.5);
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+button {
+  background: yellow;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}

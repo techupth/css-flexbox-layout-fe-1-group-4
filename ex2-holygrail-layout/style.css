@@ -1,1 +1,51 @@
 /* Start coding here */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header, .footer {
+  font-weight: bold;
+}
+
+.header {
+  flex: 0 0 50px;
+  background: teal
+}
+
+.footer {
+  flex: 0 0 50px;
+  background: khaki
+}
+
+.content-body {
+  /*   flex: 1 1 auto; */
+  flex-grow: 1; /* equla to: height: calc(100vh - 100px); */
+  display: flex;
+  flex-direction: row;
+}
+
+.content-body .content {
+  flex: 1;
+  padding: 100px;
+  margin: 0 5px;
+  background: rgb(255, 171, 15)
+
+
+}
+.content-body .sidenav,
+.content-body .ads {
+  flex: 0 0 100px;
+  padding: 100px;
+  background: orange
+
+}
+
